@@ -13,4 +13,4 @@ docker run -v $(pwd):/app/ --workdir=/app -it pythonkata ptw
 
 and eventually see something like this:
 
-![](./pics/python.png)
+![](./python.png)
