@@ -45,3 +45,10 @@ class SortTest(unittest.TestCase):
 
         assert output == [1,2,3]
 
+    def test_another_three_element_unsorted_list(self):
+        inputArr = [3,2,1]
+
+        output = sort(inputArr)
+
+        assert output == [1,2,3]
+
