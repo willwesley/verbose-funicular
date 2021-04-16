@@ -31,3 +31,10 @@ class SortTest(unittest.TestCase):
 
         assert output == [1,2]
 
+    def test_three_element_unsorted_list(self):
+        inputArr = [2,1,3]
+
+        output = sort(inputArr)
+
+        assert output == [1,2,3]
+
