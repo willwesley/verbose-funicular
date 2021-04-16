@@ -1,0 +1,38 @@
+- as a profession, software engineering is crap
+- shipping the hacks
+    - inevitable
+    - traditional (waterfall) lots of project planning -> eventually some earlier assumption is found wanting, so put some duct tape on it
+    - modern (agile) embrace the hacks, we live by them!
+- software is squishy/malleable
+    - "I can do anything" - but maybe I shouldn't?
+    - feature creep
+    - code rot
+- a panacea for the masses: test the code!
+    - get some monkeys to do it - error prone, not a poly-time problem
+    - make machine monkeys do it (e2e) - still not polytime, and now it's brittle
+    - unit tests
+        - smaller number of tests required for similar coverage
+        - now the monkeys need only check that big pieces go together correctly, not the intricacies of each unit
+    - some sort of balance combination of these is needed
+- testing is an after thought
+    - might require huge amounts of boiler plate mocking and stubbing dependencies - hard to test highly coupled code
+    - definition of "enough" metric is important - no assert coverage is one of the four horsemen of the apocalypse
+    - tight budget/schedule? drop the tests
+- but tests are more important than the production code
+    - if i have a pile of untested production code, writing tests for it is hard
+    - if i have a pile of tests, writing production code from that is a fun game
+- tdd
+    - encourages modular development
+    - adherents to the discipline write no code that doesn't have a failing test to satisfy
+    - and yes, leads to highly covered code
+    - what about test driven maintenance? maybe a research topic?
+- red/green/refactor
+    - write a test for some new behavior - behavior may not exist so red
+    - write *the bare minimum* to make the test pass - green 
+        - I repeat *the bare minimum*
+    - while keeping the test suite green, apply any refactors that have become apparent
+    - repeat until hair has a silky sheen
+- this is a huge pain in the ass
+    - like exercising or counting or learning a new language
+    - how do we approach those things? practice! focused skill practice
+    - focus on practicing tdd, not solving a problem - kata
