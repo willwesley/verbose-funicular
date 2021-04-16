@@ -9,3 +9,10 @@ class SortTest(unittest.TestCase):
         output = sort(inputArr)
 
         assert output == []
+
+    def test_single_element_list(self):
+        inputArr = [1]
+
+        output = sort(inputArr)
+
+        assert output == [1]

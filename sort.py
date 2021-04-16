@@ -1,2 +1,2 @@
 def sort(arr):
-    return []
+    return arr
