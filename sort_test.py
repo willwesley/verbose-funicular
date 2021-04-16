@@ -16,3 +16,18 @@ class SortTest(unittest.TestCase):
         output = sort(inputArr)
 
         assert output == [1]
+
+    def test_two_element_sorted_list(self):
+        inputArr = [1,2]
+
+        output = sort(inputArr)
+
+        assert output == [1,2]
+
+    def test_two_element_unsorted_list(self):
+        inputArr = [2,1]
+
+        output = sort(inputArr)
+
+        assert output == [1,2]
+
